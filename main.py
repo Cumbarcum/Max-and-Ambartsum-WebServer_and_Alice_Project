@@ -5,7 +5,7 @@ from models import db, User, Subject, Ticket
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "I_CAME-I_SAW-I_CONQUERED"
-app.config['SQLALCHEMY_DATABASE_URL'] = 'sqlite:///exam_master.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///exam_master.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
